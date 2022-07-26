@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Family Identification
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <center>
+        <h1>Family Recognition App</h1>
+        <h3>it will recognozie the below</h3>
+        <hr>
+        <h4>Brother</h4>
+        <hr>
+        <h4>Sister</h4>
+        <hr>
+        <h4>Mother</h4>
+        <hr>
+        <h4>Father</h4>
+        <hr>
+        <div class="col-md-4 col-sm-12">
+            <div id="webcam1"></div>
+            <br>
+            <button id="capture1" onclick="take_snap()">Capture Image</button>
+        </div>
+        <div id="center" class="col-md-4 col-sm-12">
+            <p id="object1">Person:</p>
+            <p id="acc1">Accuracy:</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div id="results">
+            </div>
+            <br>
+            <button id="identify1" onclick="check()">Identify</button>
+        </div>
+    </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
